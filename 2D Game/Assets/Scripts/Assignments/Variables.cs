@@ -21,8 +21,12 @@ public class Variables : MonoBehaviour {
 		speed = 0.94f;
 		name = "Bob";
 		number = 20;
-
+		
 		print(name +" is"+number+" years old"+ speed);
+		/*
+		New
+		Multiline text 
+		for practice*/
 		
 		speed = 1.2f;
 		name = "Jimmy";
@@ -30,6 +34,10 @@ public class Variables : MonoBehaviour {
 		
 		print(name+"is"+ number+"years old");
 		print(name+"is very fast"+ speed);
+		/*
+		Practice 
+		makes
+		perfect! */
 
 		speed = 0.2f;
 		name = "turtle";
