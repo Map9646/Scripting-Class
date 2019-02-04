@@ -9,7 +9,7 @@ public class Variables : MonoBehaviour {
 	public string name;
 
 	// Use this for initialization
-	void Start () {
+	void Start (){
 		/*
 		This 
 		is 
@@ -20,9 +20,24 @@ public class Variables : MonoBehaviour {
 		//number = 10;
 		speed = 0.94f;
 		name = "Bob";
+		number = 20;
 
 		print(name +" is"+number+" years old"+ speed);
+		
+		speed = 1.2f;
+		name = "Jimmy";
+		number = 15
+		
+		print(name+"is"+ number+"years old");
+		print(name+"is very fast"+ speed);
+
+		speed = 0.2f;
+		name = "turtle";
+		number = 1;
+
+		print
 	}
+		
 	
 	// Update is called once per frame
 	void Update () {
