@@ -7,6 +7,10 @@ public class Variables : MonoBehaviour {
 	public int number;
 	public float speed;
 	public string name;
+	public string dialoge;
+	public float percentage;
+	public int year;
+	public string town;
 
 	// Use this for initialization
 	void Start (){
@@ -21,30 +25,20 @@ public class Variables : MonoBehaviour {
 		speed = 0.94f;
 		name = "Bob";
 		number = 20;
+		dialoge ="Hello, my name is Bob";
+		percentage = 0.52f;
+		year = 2019;
+		town = "juneau";
 		
-		print(name +" is"+number+" years old"+ speed);
 		/*
 		New
 		Multiline text 
-		for practice*/
-		
-		speed = 1.2f;
-		name = "Jimmy";
-		number = 15
-		
-		print(name+"is"+ number+"years old");
-		print(name+"is very fast"+ speed);
-		/*
+		for practice
 		Practice 
 		makes
-		perfect! */
+		perfect! */;
 
-		speed = 0.2f;
-		name = "turtle";
-		number = 1;
-
-		print(name+ "is"+ number + "foot long")
-		print(name+"is very slow"+ speed)
+		
 	}
 		
 	
