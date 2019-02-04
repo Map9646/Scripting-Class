@@ -13,7 +13,19 @@ public class Functions : MonoBehaviour {
 		Weather(weather);
 		Ocean(ocean);
 		Desert(desert);
+		Frozentundra(Frozentundra);
 
+	}
+	void Frozentundra(string FrozentundraState){
+		print("the icyterain state is" + FrozentundraState);
+
+		if(FrozentundraState == "cold"){
+			print("The air is very brisk today! ")
+		}
+		else if(FrozentundraState == "blizzard"){
+			print("The blizzard is too strong!");
+		}
+		
 	}
 	void Desert(string desertState){
 		print("the desert state is"+ desertState);
