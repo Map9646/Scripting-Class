@@ -234,6 +234,10 @@ MonoBehaviour:
   number: 5
   speed: 0
   name: 
+  dialoge: 
+  percentage: 0
+  year: 0
+  town: 
 --- !u!114 &348175589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,7 +249,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 257f82a7d17652f4b8b02a632394ae58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weather: 
+  weather: raining
+  ocean: Waves
+  desert: calm
+  island: summer
+  frozentundra: blizzard
 --- !u!1 &561422803
 GameObject:
   m_ObjectHideFlags: 0
