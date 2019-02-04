@@ -7,26 +7,42 @@ public class Functions : MonoBehaviour {
 	public string weather; 
 	public string ocean;
 	public string desert;
+	public string island;
+	public string frozentundra;
 	
 	void Start(){
 		
 		Weather(weather);
 		Ocean(ocean);
 		Desert(desert);
-		Frozentundra(Frozentundra);
+		Island(island);
+		Frozentundra(frozentundra);
 
 	}
-	void Frozentundra(string FrozentundraState){
-		print("the icyterain state is" + FrozentundraState);
+	void Frozentundra(string frozentundraState){
+		print("The tundra is");
 
-		if(FrozentundraState == "cold"){
-			print("The air is very brisk today! ")
+		if(frozentundraState == "cold"){
+			print("The air is brisk and cool today.");
 		}
-		else if(FrozentundraState == "blizzard"){
-			print("The blizzard is too strong!");
-		}
-		
+		 else if(frozentundraState == "blizzard"){
+			 print("the blizzard is raging on.");
+		 }
 	}
+	void Island(string islandState){
+		print("The island weather is");
+
+		if(islandState == "summer"){
+			print("I love that warm summer breeze");
+		}
+
+		else if(islandState == "fall"){
+			print("look at the leaves falling from the trees");
+		}
+		else if(islandState == "winter");
+	}
+
+
 	void Desert(string desertState){
 		print("the desert state is"+ desertState);
 
@@ -34,10 +50,10 @@ public class Functions : MonoBehaviour {
 			print("the desert is dry and calm today");
 		}
 		else if(desertState == "dust clouds"){
-			print("the wind is picking up in the desert")
+			print("the wind is picking up in the desert");
 		}
 		else if(desertState == "SandStorm"){
-			print("the desert is brewing up a nasty storm")
+			print("the desert is brewing up a nasty storm");
 		}
 	}
 	void Ocean(string oceanState){
@@ -46,9 +62,11 @@ public class Functions : MonoBehaviour {
 		if(oceanState == "Little Waves"){
 			print("the seas are calm today");
 		}
+
 		else if(oceanState == "Waves"){
 			print("the seas are filled with white capes today");
 		}
+
 		else if(oceanState == "Rough"){
 			print("A storm is upon us!");
 		}
