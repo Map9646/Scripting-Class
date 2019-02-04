@@ -35,7 +35,8 @@ public class Variables : MonoBehaviour {
 		name = "turtle";
 		number = 1;
 
-		print
+		print(name+ "is"+ number + "foot long")
+		print(name+"is very slow"+ speed)
 	}
 		
 	
