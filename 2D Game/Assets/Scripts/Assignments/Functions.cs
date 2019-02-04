@@ -5,12 +5,43 @@ using UnityEngine;
 public class Functions : MonoBehaviour {
 
 	public string weather; 
+	public string ocean;
+	public string desert;
 	
 	void Start(){
 		
 		Weather(weather);
-	}
+		Ocean(ocean);
+		Desert(desert);
 
+	}
+	void Desert(string desertState){
+		print("the desert state is"+ desertState);
+
+		if(desertState == "calm"){
+			print("the desert is dry and calm today");
+		}
+		else if(desertState == "dust clouds"){
+			print("the wind is picking up in the desert")
+		}
+		else if(desertState == "SandStorm"){
+			print("the desert is brewing up a nasty storm")
+		}
+	}
+	void Ocean(string oceanState){
+		print("the ocean current is" + oceanState);
+
+		if(oceanState == "Little Waves"){
+			print("the seas are calm today");
+		}
+		else if(oceanState == "Waves"){
+			print("the seas are filled with white capes today");
+		}
+		else if(oceanState == "Rough"){
+			print("A storm is upon us!");
+		}
+		
+	}
 	void Weather(string weatherState){
 		print("the current weather is "+ weatherState );
 
