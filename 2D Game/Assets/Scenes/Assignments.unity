@@ -5473,6 +5473,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  jumpHeight: 3
 --- !u!1 &1573067501
 GameObject:
   m_ObjectHideFlags: 0
@@ -5506,19 +5507,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8b802a281e821140978abc57ace4454, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  legs: 0
-  domesticated: 0
-  tail: 0
-  pointedEars: 0
-  shortHair: 0
-  declawed: 0
-  size: 0
-  weight: 0
-  agility: 0
-  furColor: 
-  age: 0
-  banded: 0
 --- !u!114 &1573067503
 MonoBehaviour:
   m_ObjectHideFlags: 0
