@@ -5489,6 +5489,7 @@ GameObject:
   - component: {fileID: 1573067504}
   - component: {fileID: 1573067503}
   - component: {fileID: 1573067502}
+  - component: {fileID: 1573067508}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Coin
@@ -5503,9 +5504,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1573067501}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8b802a281e821140978abc57ace4454, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1573067503
@@ -5553,7 +5558,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1573067501}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b6694513844f3164f9c19db95b4c6feb, type: 3}
   m_Name: 
@@ -5572,7 +5577,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1573067501}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 257f82a7d17652f4b8b02a632394ae58, type: 3}
   m_Name: 
@@ -5596,6 +5601,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1573067508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573067501}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21c7d03571856c945b337d627402d904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stopLight: 
+  isUtahn: 0
 --- !u!1 &2050055626
 GameObject:
   m_ObjectHideFlags: 0
