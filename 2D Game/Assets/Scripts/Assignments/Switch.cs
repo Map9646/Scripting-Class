@@ -5,6 +5,8 @@ using UnityEngine;
 public class Switch : MonoBehaviour{
 
     public string suspect;
+    public string weapon;
+    public string evidence;
     
     // Start is called before the first frame update
     void Start() {
@@ -36,6 +38,25 @@ public class Switch : MonoBehaviour{
             break;
 
             // Went over how a switch works and cases and how they work as well. 
+
+            }
+
+            switch(weapon){
+                case "Kitchen Knife":
+                print("Kitchen Knife found in an unusal place in the kitchen");
+                break;
+
+                case "Axe":
+                print("Axe was found in the backyard in an usual spot.");
+                break;
+
+                case "Gun"
+                print("Small pistol found in master bedroom."
+            }
+
+            
+            
+            
             
 
     }
