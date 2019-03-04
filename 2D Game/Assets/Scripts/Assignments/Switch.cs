@@ -52,14 +52,30 @@ public class Switch : MonoBehaviour{
 
                 case "Gun"
                 print("Small pistol found in master bedroom."
+
             }
 
-            
+            switch(evidence){
+
+            case "Ms. FrySauce in Master Bedroom";
+            print("That gun belonged to my dad. My mom, Mrs. Mayo hated it.");
+            break;
+
+            case "Mrs. Mayo"
+            print("I was only doing dishes. I don't know why someone would kill my husband. Stop askig me silly questions.");
+            break;
+
+            /*Ask Preston why this segment is blue for switch and the other is purple. 
+            I'm not sure what I did wrong here. It may be syntax. Have to check in unity on Monday. */
+            }
+            }
             
             
             
 
     }
+
+            
 
 }
     
