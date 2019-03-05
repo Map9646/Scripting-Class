@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 21283109}
   - component: {fileID: 21283108}
   - component: {fileID: 21283107}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -227,6 +227,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &64525874
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 64525875}
+  m_Layer: 0
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &64525875
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64525874}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.083, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1563275945}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &102851234
 GameObject:
@@ -5456,7 +5486,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.31, y: -3.31, z: 65.70508}
   m_LocalScale: {x: 10.606593, y: 10.606593, z: 10.606593}
-  m_Children: []
+  m_Children:
+  - {fileID: 64525875}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5475,6 +5506,11 @@ MonoBehaviour:
   moveSpeed: 5
   jumpHeight: 5
   grounded: 1
+  groundCheck: {fileID: 64525875}
+  groundCheckRadius: 0.1
+  whatisGround:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &1573067501
 GameObject:
   m_ObjectHideFlags: 0
@@ -5509,10 +5545,6 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8b802a281e821140978abc57ace4454, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1573067503
@@ -5617,6 +5649,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stopLight: 
   isUtahn: 0
+  weather: 
+  lampLight: 
 --- !u!114 &1573067509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5630,6 +5664,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   suspect: 
+  weapon: 
+  evidence: 
 --- !u!114 &1573067510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5637,12 +5673,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1573067501}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 237fc5d3e61c1ab4b93220cf86e3c2e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   suspect: 
+  weapon: 
+  evidence: 
 --- !u!1 &2050055626
 GameObject:
   m_ObjectHideFlags: 0

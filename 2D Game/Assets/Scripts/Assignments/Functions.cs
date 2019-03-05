@@ -10,6 +10,7 @@ public class Functions : MonoBehaviour {
 	public string island;
 	public string frozentundra;
 	
+	
 	void Start(){
 		
 		Weather(weather);
@@ -18,6 +19,9 @@ public class Functions : MonoBehaviour {
 		Island(island);
 		Frozentundra(frozentundra);
 
+		print(Sum(36,24));
+
+		print(Multi(20,5));
 	}
 	void Frozentundra(string frozentundraState){
 		print("The tundra is");
@@ -39,7 +43,9 @@ public class Functions : MonoBehaviour {
 		else if(islandState == "fall"){
 			print("look at the leaves falling from the trees");
 		}
-		else if(islandState == "winter");
+		else if(islandState == "winter"){
+			print("It's cold outside!");
+		}
 	}
 
 
@@ -70,9 +76,11 @@ public class Functions : MonoBehaviour {
 		else if(oceanState == "Rough"){
 			print("A storm is upon us!");
 		}
-		
 	}
-	void Weather(string weatherState){
+		
+		
+	
+	 void Weather(string weatherState){
 		print("the current weather is "+ weatherState );
 
 		if(weatherState == "Sunny"){
@@ -98,6 +106,16 @@ public class Functions : MonoBehaviour {
 		}
 	}
 
+		
+		
+
+	int Sum(int a, int b){
+		return(a + b);
+
+	}
 	
+	int Multi(int c, int d){
+		return c * d;
+	}
 		
 }

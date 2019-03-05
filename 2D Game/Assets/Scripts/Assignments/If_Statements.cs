@@ -12,9 +12,7 @@ public class If_Statements : MonoBehaviour{
 
     // Start is called before the first frame update
     void Start(){
-        StopLight(stopLight);
-        Weather(weather);
-        LampLight(lampLight);
+        
         
         
     }
@@ -22,7 +20,7 @@ public class If_Statements : MonoBehaviour{
     // Update is called once per frame
     void Update(){
 
-        void StopLight(string stopLight){
+        
         if(stopLight == "Red"){
             //blockof code that is run if the condition is met
             // ! means NOT
@@ -42,11 +40,7 @@ public class If_Statements : MonoBehaviour{
         else{
              print("Check phone, turn up radio and sit at light until almost yellow, then go!");
         }
-       
-        }
-        
-        void Weather(string weather){
-            if(weather == "sunny"){
+        if(weather == "sunny"){
                 print("The sun is shining on us today!");
             }
 
@@ -66,12 +60,12 @@ public class If_Statements : MonoBehaviour{
             else if(weather == "lightning"){
                 print("There is a huge storm outside. You better get back inside where it is safe.");
             }
-        }
 
-            void LampLight(string lampLight){
+            
                 if(lampLight == "Green"){
                     print("Green is my favorite color, so pretty!");
                 }
+                
                 else if(lampLight == "Red"){
                     print("I hide when it turns red cause all the shadows come out.");
                 }
@@ -87,12 +81,13 @@ public class If_Statements : MonoBehaviour{
                 else if(lampLight == "white"){
                     print("Now I can sleep cause all the monsters are gone.");
                 }
+        }
 
-
-            }
+        
+}
         
 
-        }
+        
     
-    }
-}
+    
+
