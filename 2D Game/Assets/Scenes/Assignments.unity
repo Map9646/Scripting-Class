@@ -5528,6 +5528,7 @@ GameObject:
   - component: {fileID: 1573067508}
   - component: {fileID: 1573067510}
   - component: {fileID: 1573067509}
+  - component: {fileID: 1573067511}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Coin
@@ -5681,6 +5682,30 @@ MonoBehaviour:
   suspect: 
   weapon: 
   evidence: 
+--- !u!114 &1573067511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573067501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9be2e844918486041872ad50cee0fcca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clinent1: Greg
+  clinent2: Kate
+  clinent3: Adam
+  clinent4: Mia
+  clinent5: Fred
+  clientList:
+  - Greg
+  - Kate
+  - Adam
+  - Mia
+  - Fred
+  santasList: []
 --- !u!1 &2050055626
 GameObject:
   m_ObjectHideFlags: 0
