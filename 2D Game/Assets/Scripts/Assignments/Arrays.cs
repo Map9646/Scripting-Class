@@ -17,7 +17,7 @@ public class Arrays : MonoBehaviour{
     //Array Example
     public string[] clientList = new string[5]{"Greg", "Kate", "Adam", "Mia", "Fred"};
     public string[] friendsList = new string [3]{"Virginia", "Coy", "Britny"};
-    public float [] scoresList = new float [4] {10.5, 8.34, 5.221, 2.05,};
+    public float [] scoresList = new float [4] {10.5, 8.34, 5.221, 2.05};
     public string [] citiesList = new string [3] {"Juneau", "Orem", "Kansas City"};
     public int [] testscoreList = new int [5] {10, 7, 5, 5, 9};
     //An Array is fixed and cannot be changed, but can be used for strings, floats, and gameobjects
@@ -25,10 +25,10 @@ public class Arrays : MonoBehaviour{
 
     //List Example(Run a little slower than arrays)
      public List<string> santasList = new List<string>();
-     public List<string> friendList = new List<string>();
-     public List<string> scoresList = new List<string>();
-     public List<string> testscoreList = new List<string>();
-     public List<string> citiesList = new List<string>();
+     public List<string> myfriendList = new List<string>();
+     public List<int> bankList = new List<int>();
+     public List<string> girlList = new List<string>();
+     public List<string> campingList = new List<string>();
     //can add and take away from lists after list is created
 
 
@@ -54,25 +54,23 @@ public class Arrays : MonoBehaviour{
         print(santasList[3]);
 
 
-        friendList.Add("Coy");
-        friendList.Add("Virginia");
-        friendList.Add("Britny");
+        myfriendList.Add("Coy");
+        myfriendList.Add("Virginia");
+        myfriendList.Add("Britny");
 
-        testscoreList.Add(10);
-        testscoreList.Add(9);
-        testscoreList.Add(7);
-        testscoreList.Remove(5);
-        testscoreList.Remove(5);
+        bankList.Add(1000);
+        bankList.Add(350);
+        bankList.Remove(350);
 
-        scoreList.Add(10.5);
-        scoreList.Add(8.34);
-        scoreList.Remove(5.221);
-        scoreList.Remove(2.05);
 
-        citiesList.Add("Juneau");
-        citiesList.Add("Orem");
-        citiesList.Add("Kansas City");
-        citiesList.Remove("Kansas City");
+        girlList.Add("Jessica");
+        girlList.Add ("Abby");
+        girlList.Add("Megara");
+
+
+        campingList.Add("Tent");
+        campingList.Add("food");
+        campingList.Add("Sleeping Bag");
 
 
         //ArrayLists

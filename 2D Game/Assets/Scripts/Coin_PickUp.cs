@@ -9,6 +9,8 @@ public class Coin_PickUp : MonoBehaviour{
     void OnTriggerEnter2D(Collider2D other){
         if(other.name=="Player"){
             print("You've collected the coin");
+             
+             ScoreManager.AddPoints(coinValue);
 
             Destroy(gameObject);
         }
