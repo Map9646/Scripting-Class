@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Arrays : MonoBehaviour{
 
-    //HW for this week: Do five examples of arrays, examples and arraylist. Make c# script for all three so it is organized.
+    //HW for this week: Do five examples of arrays,lists and arraylist. Make c# script for all three so it is organized.
 
     //Collection of client variables
     public string clinent1 = "Greg";
@@ -16,31 +16,66 @@ public class Arrays : MonoBehaviour{
     //An Array makes things easier to list things out in one set of code
     //Array Example
     public string[] clientList = new string[5]{"Greg", "Kate", "Adam", "Mia", "Fred"};
+    public string[] friendsList = new string [3]{"Virginia", "Coy", "Britny"};
+    public float [] scoresList = new float [4] {10.5, 8.34, 5.221, 2.05,};
+    public string [] citiesList = new string [3] {"Juneau", "Orem", "Kansas City"};
+    public int [] testscoreList = new int [5] {10, 7, 5, 5, 9};
     //An Array is fixed and cannot be changed, but can be used for strings, floats, and gameobjects
     
 
     //List Example(Run a little slower than arrays)
      public List<string> santasList = new List<string>();
+     public List<string> friendList = new List<string>();
+     public List<string> scoresList = new List<string>();
+     public List<string> testscoreList = new List<string>();
+     public List<string> citiesList = new List<string>();
     //can add and take away from lists after list is created
 
 
     //ArrayLists Example
     //can mix and match data types with arraylist unlike the other two
     public ArrayList inventory = new ArrayList();
+    public ArrayList shopping = new ArrayList();
 
 
      // Start is called before the first frame update
     void Start(){
+        
+        //Lists
         santasList.Add("Jimmy");
         santasList.Add("Jenny");
         santasList.Add("Sam");
         santasList.Add("Ty");
         santasList.Add("Susie");
         santasList.Remove("Jimmy");
-
+        
         print(clientList[2]);
 
         print(santasList[3]);
+
+
+        friendList.Add("Coy");
+        friendList.Add("Virginia");
+        friendList.Add("Britny");
+
+        testscoreList.Add(10);
+        testscoreList.Add(9);
+        testscoreList.Add(7);
+        testscoreList.Remove(5);
+        testscoreList.Remove(5);
+
+        scoreList.Add(10.5);
+        scoreList.Add(8.34);
+        scoreList.Remove(5.221);
+        scoreList.Remove(2.05);
+
+        citiesList.Add("Juneau");
+        citiesList.Add("Orem");
+        citiesList.Add("Kansas City");
+        citiesList.Remove("Kansas City");
+
+
+        //ArrayLists
 
         inventory.Add(10);
         inventory.Add("Bob");
@@ -48,6 +83,11 @@ public class Arrays : MonoBehaviour{
         inventory.Add(5.2341);
 
         print(inventory[0]);
+
+        shopping.Add("Fruit");
+        shopping.Add("Vegtables");
+        shopping.Remove("Frysauce");
+        shopping.Add("Ice Cream");
 
     }
 
