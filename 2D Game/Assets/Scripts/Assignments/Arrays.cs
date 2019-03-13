@@ -15,15 +15,15 @@ public class Arrays : MonoBehaviour{
     
     //An Array makes things easier to list things out in one set of code
     //Array Example
-    public string[] clientList = new string[5]{"Greg", "Kate", "Adam", "Mia", "Fred"};
-    public string[] friendsList = new string [3]{"Virginia", "Coy", "Britny"};
-    public float [] scoresList = new float [4] {10.5, 8.34, 5.221, 2.05};
-    public string [] citiesList = new string [3] {"Juneau", "Orem", "Kansas City"};
-    public int [] testscoreList = new int [5] {10, 7, 5, 5, 9};
-    //An Array is fixed and cannot be changed, but can be used for strings, floats, and gameobjects
+    public string[] clientList = new string[]{"Greg","Kate","Adam","Mia","Fred"};
+    public string[] friendsList = new string[]{"Virginia","Coy","Britny"};
+    public int[] scoresList = new int[]{10,8,5,2};
+    public string[] citiesList = new string[]{"Juneau","Orem","Kansas City"};
+    public int[] testscoreList = new int[]{10,7,5,5,9};
+    //An Array is fixed and cannot be changed, but can be used for strings, floats, and gameobjects 
     
 
-    //List Example(Run a little slower than arrays)
+    //List Example(Run a little slower than arrays and also scalable)
      public List<string> santasList = new List<string>();
      public List<string> myfriendList = new List<string>();
      public List<int> bankList = new List<int>();
@@ -64,7 +64,7 @@ public class Arrays : MonoBehaviour{
 
 
         girlList.Add("Jessica");
-        girlList.Add ("Abby");
+        girlList.Add("Abby");
         girlList.Add("Megara");
 
 
@@ -84,6 +84,7 @@ public class Arrays : MonoBehaviour{
 
         shopping.Add("Fruit");
         shopping.Add("Vegtables");
+        shopping.Add("Frysauce");
         shopping.Remove("Frysauce");
         shopping.Add("Ice Cream");
 

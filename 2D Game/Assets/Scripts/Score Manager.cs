@@ -8,13 +8,7 @@ public class ScoreManager : MonoBehaviour{
     public static int score;
 
     Text scoreText;
-
-
-   
-
-    }
-    
-    //if you don't declare a variable public then it will default to private
+//if you don't declare a variable public then it will default to private
 
 
 
@@ -41,3 +35,9 @@ public class ScoreManager : MonoBehaviour{
         score += pointsToAdd;
     }
 }
+
+   
+
+
+    
+    
