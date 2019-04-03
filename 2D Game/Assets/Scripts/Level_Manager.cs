@@ -8,11 +8,12 @@ public GameObject currentCheckPoint;
 public Rigidbody2D pcRigid;
 public GameObject Player;
 
-public Object deathParticles; // look up what I called these two when I get to class
-public GameObject respawnparticles;
+public Object deathParticle; // look up what I called these two when I get to class
+public GameObject respawnParticle;
 
-public int pointPenaltyOnDeath;
-public floar gravityStore;
+public int pointPenalityOnDeath;
+public float gravityStore;
+public int respawnDelay;
 
 
 
@@ -20,22 +21,24 @@ public floar gravityStore;
 
     // Start is called before the first frame update
     void Start(){
-        pcRigid= GameObject.Find("Player").GetComponent<Rigidbody2D>(){
-        player = GameObject.Find("Player");   
+        pcRigid= GameObject.Find("Player").GetComponent<Rigidbody2D>();
+        Player = GameObject.Find("Player");   
         
-        }
+    }
+       
+        
         
         public void RespawnPlayer(){
             StartCoroutine ("RespawnPlayerCo");
         }
         
         public IEnumerator RespawnPlayerco(){ // instantiate means to represent as, so that's why it's used to call upon the particles
-            Insantiate(deathParticles, pcRigid.transform.position, pcRigid.transform.rotation);
+            Instantiate(deathParticle, pcRigid.transform.position, pcRigid.transform.rotation);
 
             //This line of script is to hide the player when he "dies"
             Player.SetActive(false); //hides all aspects of the player:)
 
-            gravityStore = pcRigid.GetComponent<Rigidbody2D>.gravityScale;
+            gravityStore = pcRigid.GetComponent<Rigidbody2D>().gravityScale;
             pcRigid.GetComponent<Rigidbody2D>().gravityScale = 0f;
             pcRigid.GetComponent<Rigidbody>().velocity = Vector2.zero;
 
@@ -45,19 +48,19 @@ public floar gravityStore;
             Debug.Log ("PC Respawn");
 
             //Next line is so the player won't respawn instantaniously 
-            yield return new WaitForSeconds (respawnDelay);
+            yield return new WaitForSeconds(respawnDelay);
 
 
             pcRigid.transform.position = currentCheckPoint.transform.position;
 
             //Next line is for showing the player again when he respawns
-            player.SetActive(true);
+            Player.SetActive(true);
 
             //Respawn Particles when Player respawns into game
             Instantiate (respawnParticle, currentCheckPoint.transform.position, currentCheckPoint.transform.rotation);
             
         }
-    }
+    
 
     // Update is called once per frame
     void Update(){
