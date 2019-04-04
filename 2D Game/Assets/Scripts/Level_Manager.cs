@@ -32,15 +32,16 @@ public int respawnDelay;
             StartCoroutine ("RespawnPlayerCo");
         }
         
-        public IEnumerator RespawnPlayerco(){ // instantiate means to represent as, so that's why it's used to call upon the particles
+        public IEnumerator RespawnPlayerCo(){ // instantiate means to represent as, so that's why it's used to call upon the particles
             Instantiate(deathParticle, pcRigid.transform.position, pcRigid.transform.rotation);
 
             //This line of script is to hide the player when he "dies"
             Player.SetActive(false); //hides all aspects of the player:)
+            Player.GetComponent<Renderer>().enabled = false;
 
             gravityStore = pcRigid.GetComponent<Rigidbody2D>().gravityScale;
             pcRigid.GetComponent<Rigidbody2D>().gravityScale = 0f;
-            pcRigid.GetComponent<Rigidbody>().velocity = Vector2.zero;
+            pcRigid.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 
 
             ScoreManager.AddPoints(-pointPenalityOnDeath);
@@ -52,9 +53,11 @@ public int respawnDelay;
 
 
             pcRigid.transform.position = currentCheckPoint.transform.position;
+            pcRigid.GetComponent<Rigidbody2D>().gravityScale = gravityStore;
 
             //Next line is for showing the player again when he respawns
             Player.SetActive(true);
+            Player.GetComponent<Renderer>().enabled = true;
 
             //Respawn Particles when Player respawns into game
             Instantiate (respawnParticle, currentCheckPoint.transform.position, currentCheckPoint.transform.rotation);

@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Health_Bar : MonoBehaviour{
 
     public int healthBar;
     public int currentHP;
     
+    Text Health;
 
 
     // Start is called before the first frame update
@@ -15,6 +17,12 @@ public class Health_Bar : MonoBehaviour{
         healthBar = 100;
 
         currentHP = healthBar;
+
+        Health = GetComponent<Text>();
+
+        Health.text = " " + currentHP;
+
+      
 
 
         
@@ -25,11 +33,11 @@ public class Health_Bar : MonoBehaviour{
         
     }
 
-    public void damageTaken(){
-        currentHP -= damageTaken;
+    public void damageTaken(int damage){
+        currentHP -= damage;
 
         if(currentHP <= 0){
-            currentHP <= 0;
+            currentHP = 0;
             print("Game Over!");
         }    
         
