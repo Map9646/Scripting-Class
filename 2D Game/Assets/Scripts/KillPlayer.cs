@@ -2,28 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KillPlayer : MonoBehaviour{
-
-    public Level_Manager levelManager;
+public class KillPlayer : MonoBehaviour
+{
+    public Level_Manager level_Manager;
+//Look up Script
 
     // Start is called before the first frame update
-    void Start(){
-
-        levelManager = FindObjectOfType<Level_Manager>();
+    void Start()
+    {
+        level_Manager = FindObjectOfType<Level_Manager>();
         
     }
 
     void OnTriggerEnter2D(Collider2D other){
         if(other.name == "Player"){
-            levelManager.RespawnPlayer();
+            level_Manager.RespawnPlayer();
         }
-    }
-
-
-
-    // Update is called once per frame
-    void Update(){
-
-        
     }
 }

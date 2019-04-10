@@ -15,9 +15,9 @@ public class Projectile : MonoBehaviour{
     void Start(){
         Player = GameObject.Find("Player");
 
-        enemyDeath = Resources.Load("Prefabs/Death_PS") as GameObject;
+        enemyDeath = Resources.Load("Prefabs/PS") as GameObject;
 
-        projectileParticle = Resources.Load("Prefabs/ Respawn_PS") as GameObject;
+        projectileParticle = Resources.Load("Prefabs/PS") as GameObject;
 
         if(Player.transform.localScale.x < 0){ //Ensures that projectile shoots the same direction as the player in facing 
             Speed = -Speed;

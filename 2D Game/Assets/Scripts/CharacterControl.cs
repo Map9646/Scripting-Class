@@ -38,8 +38,16 @@ public class CharacterControl : MonoBehaviour {
 		//Makes player jump
 		 if (Input.GetKeyDown(KeyCode.W) && grounded){
 			Jump();
+
 		}
-	}
+		if(GetComponent<Rigidbody2D>().velocity.x < 0)
+			transform.localScale = new Vector3(5f,5f,1f);
+
+		else if(GetComponent<Rigidbody2D>().velocity.x < 0)
+			transform.localScale = new Vector3(-5f,5f,1f);	
+			
+			}
+		
 		void Jump(){
 			GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x,jumpHeight);	
 		}

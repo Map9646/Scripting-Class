@@ -15,13 +15,14 @@ public class Player_Shoot : MonoBehaviour{
 
         projectile = Resources.Load("Prefabs/Projectile") as GameObject;
         //Error will show in Unity only because we have nothing in prefabs by that name yet
+        
 
     }
 
     // Update is called once per frame
     void Update(){
 
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.E))
             Instantiate(projectile,firePoint.position,firePoint.rotation);
             //The object we create in Unity will be linked or inherited through the Player, so they have to be on the same field
 
