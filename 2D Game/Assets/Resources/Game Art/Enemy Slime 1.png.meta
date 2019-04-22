@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: 564dba26389972249b8012c5ebd549c2
+guid: bac38eecaa2fa464aba8249d846d153b
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Character TileSheet_0
-    21300002: Character TileSheet_1
-    21300004: Character TileSheet_2
-    21300006: Character TileSheet_3
-    21300008: Character TileSheet_4
-    21300010: Character TileSheet_5
-    21300012: Character TileSheet_6
+    21300000: Enemy Slime 1_0
+    21300002: Enemy Slime 1_1
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -135,13 +130,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Character TileSheet_1
+      name: Enemy Slime 1_0
       rect:
         serializedVersion: 2
-        x: 292
-        y: 362
-        width: 97
-        height: 151
+        x: 64
+        y: 78
+        width: 820
+        height: 485
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,19 +144,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e342f65bc1a4f2943bcece5a2e21f962
+      spriteID: db0884723b74ab64e972e873bf35ea41
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character TileSheet_2
+      name: Enemy Slime 1_1
       rect:
         serializedVersion: 2
-        x: 88
-        y: 335
-        width: 96
-        height: 155
+        x: 1200
+        y: 78
+        width: 820
+        height: 485
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,47 +164,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af7b16d61a66dee4089b0d66df9469d0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character TileSheet_3
-      rect:
-        serializedVersion: 2
-        x: 186
-        y: 357
-        width: 108
-        height: 137
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 3, y: 0, z: 8, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c33e97d98e048b740878675478ee7ba8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character TileSheet_5
-      rect:
-        serializedVersion: 2
-        x: 56
-        y: 159
-        width: 132
-        height: 135
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f8813a676505648449e0f3ab05d18a79
+      spriteID: 95663812297e35f4a9f84fee2ad5ec50
       vertices: []
       indices: 
       edges: []
@@ -217,7 +172,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 566696d6f273a834683c06871e2703cb
+    spriteID: 5a36ca61605525648b58417538dcb54a
     vertices: []
     indices: 
     edges: []

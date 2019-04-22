@@ -18,12 +18,19 @@ public class CharacterControl : MonoBehaviour {
 	//Non Slide Player
 	private float moveVelocity;
 
+	//Animations
+	public Animator animator;
+
 
 	// Use this for initialization
 	void Start () {
+
+		animator.SetBool("is Walking", false);
+		animator.SetBool("is Jumping",false);
 		
 	grounded = true;
 	}
+
 
 	
 	void FixedUpdate(){
@@ -36,11 +43,13 @@ public class CharacterControl : MonoBehaviour {
 		if (Input.GetKey(KeyCode.D)){
 			//GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed,GetComponent<Rigidbody2D>().velocity.y);
 			moveVelocity = moveSpeed;
+			animator.SetBool("is Walking",true);
 
 		}
 		else if (Input.GetKey(KeyCode.A)){
 			//GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed,GetComponent<Rigidbody2D>().velocity.y);
 			moveVelocity = -moveSpeed;
+			animator.SetBool("is Walking",true);
 		}
 		
 		GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity,GetComponent<Rigidbody2D>().velocity.y);
@@ -69,6 +78,13 @@ public class CharacterControl : MonoBehaviour {
 				doubleJump = true;
 			}
 
+			//Player Flip
+			if(GetComponent<Rigidbody2D>().velocity.x > 0)
+				transform.localScale = new Vector3(1f,1f,1f);
+
+			else if( GetComponent<Rigidbody2D>().velocity.x < 0)
+				transform.localScale = new Vector3(-1f,1f,1f);
+
 			//So Player does not Slide
 
 			moveVelocity = 0f;		
@@ -79,5 +95,7 @@ public class CharacterControl : MonoBehaviour {
 		
 		void Jump(){
 			GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x,jumpHeight);	
+			animator.SetBool("is Jumping",true);
 		}
+
 }
