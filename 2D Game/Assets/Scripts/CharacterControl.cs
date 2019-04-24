@@ -41,16 +41,18 @@ public class CharacterControl : MonoBehaviour {
 	void Update () {
 		//Moves Player left and right
 		if (Input.GetKey(KeyCode.D)){
-			//GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed,GetComponent<Rigidbody2D>().velocity.y);
+			GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed,GetComponent<Rigidbody2D>().velocity.y);
 			moveVelocity = moveSpeed;
 			animator.SetBool("is Walking",true);
 
 		}
 		else if (Input.GetKey(KeyCode.A)){
-			//GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed,GetComponent<Rigidbody2D>().velocity.y);
+			GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed,GetComponent<Rigidbody2D>().velocity.y);
 			moveVelocity = -moveSpeed;
 			animator.SetBool("is Walking",true);
 		}
+
+		
 		
 		GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity,GetComponent<Rigidbody2D>().velocity.y);
 		
@@ -58,6 +60,8 @@ public class CharacterControl : MonoBehaviour {
 		//Makes player jump
 		 if (Input.GetKeyDown(KeyCode.W) && grounded){
 			Jump();
+			animator.SetBool("is Jumping",true);
+
 
 		}
 		if(GetComponent<Rigidbody2D>().velocity.x < 0)
