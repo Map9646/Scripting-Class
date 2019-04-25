@@ -51,6 +51,7 @@ public class CharacterControl : MonoBehaviour {
 			moveVelocity = -moveSpeed;
 			animator.SetBool("is Walking",true);
 		}
+		else animator.SetBool("is Walking", false);
 
 		
 		
@@ -60,15 +61,15 @@ public class CharacterControl : MonoBehaviour {
 		//Makes player jump
 		 if (Input.GetKeyDown(KeyCode.W) && grounded){
 			Jump();
-			animator.SetBool("is Jumping",true);
+			animator.SetBool("is Jumping", true);
 
 
-		}
+		}else animator.SetBool("is Jumping", false);
 		if(GetComponent<Rigidbody2D>().velocity.x < 0)
-			transform.localScale = new Vector3(1f,1f,1f);
+			transform.localScale = new Vector3(0.6f,0.6f,1f);
 
 		else if(GetComponent<Rigidbody2D>().velocity.x < 0)
-			transform.localScale = new Vector3(-1f,1f,1f);	
+			transform.localScale = new Vector3(-0.6f,0.6f,1f);	
 
 			//double jump
 
@@ -84,10 +85,10 @@ public class CharacterControl : MonoBehaviour {
 
 			//Player Flip
 			if(GetComponent<Rigidbody2D>().velocity.x > 0)
-				transform.localScale = new Vector3(1f,1f,1f);
+				transform.localScale = new Vector3(0.6f,0.6f,1f);
 
 			else if( GetComponent<Rigidbody2D>().velocity.x < 0)
-				transform.localScale = new Vector3(-1f,1f,1f);
+				transform.localScale = new Vector3(-0.6f,0.6f,1f);
 
 			//So Player does not Slide
 
