@@ -4,18 +4,23 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Exit_Level : MonoBehaviour{
+    //Index: level to load
+    public int levelToLoad;
 
-public int levelToLoad;
-    
-    void OnTriggerEnter2D(Collider2D other){
-        if(other.tag == "Player"){
-            
+    //This function loads the level stored in the levelToLoad variable
+    public void LoadLevel(){
         SceneManager.LoadScene(levelToLoad);
-        }
     }
-    public void LevelExit(){
-        Application.Quit();   
-    }
-}
 
+    //This function quits the game after the button is pressed
+    public void LevelExit(){
+        Application.Quit();
+ 
+}
+   
+
+} 
+
+
+   
     

@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Assignments.unity
     guid: 25df8938bad36664fac58174a43b219c
+  - enabled: 1
+    path: Assets/Scenes/Exit_Level.unity
+    guid: c28f71c3aa8a13d4bab964c08ffa5c99
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
